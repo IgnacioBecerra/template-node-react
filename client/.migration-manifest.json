@@ -1,0 +1,16 @@
+{
+  "fileMapping": {
+    "client/package.json": {
+      "action": "deleted",
+      "reason": "Removed by migration agent as part of framework migration. File client/package.json is framework-specific and not required in the target configuration."
+    },
+    "client/public/index.html": {
+      "action": "deleted",
+      "reason": "Removed by migration agent as part of framework migration. File client/public/index.html is framework-specific and not required in the target configuration."
+    },
+    "tsconfig.json": {
+      "action": "deleted",
+      "reason": "Removed by migration agent as part of framework migration. File tsconfig.json is framework-specific and not required in the target configuration."
+    }
+  }
+}
