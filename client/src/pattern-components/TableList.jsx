@@ -5,10 +5,9 @@ import {
   StructuredListCell,
   StructuredListHead,
   StructuredListBody,
-  StructuredListInput,
-  Icon
-} from "carbon-components-react";
-import { iconCheckmarkSolid } from "carbon-icons";
+  StructuredListInput
+} from "@carbon/react";
+import { CheckmarkFilled } from "@carbon/icons-react";
 import Header from "./Header";
 import "./patterns.scss";
 
@@ -82,10 +81,7 @@ class TableList extends Component {
             checked={this.state.selectedRow === id}
           />
           <StructuredListCell>
-            <Icon
-              className="bx--structured-list-svg"
-              icon={iconCheckmarkSolid}
-            />
+            <CheckmarkFilled className="cds--structured-list-svg" />
           </StructuredListCell>
         </div>
         {this.columns.map(col => {
@@ -105,13 +101,13 @@ class TableList extends Component {
     const data = this.state.data;
 
     return (
-      <div className="bx--grid pattern-container">
+      <div className="cds--grid pattern-container">
         <Header
           title={this.title}
           subtitle={this.subtitle}
         />
-        <div className="bx--row">
-          <div className="bx--col-xs-12">
+        <div className="cds--row">
+          <div className="cds--col-xs-12">
             <StructuredListWrapper selection border>
               <StructuredListHead>
                 <StructuredListRow head>

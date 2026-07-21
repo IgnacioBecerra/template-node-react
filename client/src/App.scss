@@ -1,8 +1,4 @@
-$feature-flags: (
-  components-x: true,
-  ui-shell: true
-);
-@import "~carbon-components/src/globals/scss/styles.scss";
+@use '@carbon/react';
 
 .App {
   font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
@@ -10,9 +6,9 @@ $feature-flags: (
   text-align: center;
 }
 
-.bx--row {
+.cds--row {
   display:block;
 }
-.bx--content {
+.cds--content {
   padding: 0px;
 }

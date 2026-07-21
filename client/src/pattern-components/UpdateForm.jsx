@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import {
   TextInput,
   Form,
-  DropdownV2,
+  Dropdown,
   Button,
   Tile
-} from "carbon-components-react";
+} from "@carbon/react";
 import Header from "./Header";
 import "./patterns.scss";
 
@@ -109,15 +109,15 @@ class UpdateForm extends Component {
 
   render() {
     return (
-      <div className="bx--grid pattern-container">
+      <div className="cds--grid pattern-container">
         <Header
           title="Update Form"
           subtitle="Update form is based on the Display
             Form pattern but will display model data and then validate ready for
             it to be updated."
         />
-        <div className="bx--row">
-          <div className="bx--col-xs-12">
+        <div className="cds--row">
+          <div className="cds--col-xs-12">
             <Tile>
               <Form>
                 <TextInput
@@ -156,11 +156,10 @@ class UpdateForm extends Component {
                 />
                 <br />
                 <br />
-                <p className="bx--label left-align">State</p>
-                <DropdownV2
+                <p className="cds--label left-align">State</p>
+                <Dropdown
                   id="state"
-                  label="Select a state.."
-                  ariaLabel="Select a state.."
+                  titleText="Select a state.."
                   items={[
                     "AL",
                     "AK",
@@ -243,11 +242,10 @@ class UpdateForm extends Component {
                 />
                 <br />
                 <br />
-                <p className="bx--label left-align">Country</p>
-                <DropdownV2
+                <p className="cds--label left-align">Country</p>
+                <Dropdown
                   id="country"
-                  label="Select a country.."
-                  ariaLabel="Select a country.."
+                  titleText="Select a country.."
                   items={["United States", "Other"]}
                   selectedItem={this.state.country}
                   onChange={this.saveDataDropdown2}
@@ -267,8 +265,8 @@ class UpdateForm extends Component {
         <br />
         <br />
         {Object.keys(this.state.dataToSave).length > 0 && (
-          <div className="bx--row">
-            <div className="bx--col-xs-12 left-align">
+          <div className="cds--row">
+            <div className="cds--col-xs-12 left-align">
               <Tile>
                 {Object.keys(this.state.dataToSave).map(item => (
                   <p key={item}>

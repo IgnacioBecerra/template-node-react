@@ -5,10 +5,9 @@ import {
   StructuredListCell,
   StructuredListHead,
   StructuredListBody,
-  StructuredListInput,
-  Icon
-} from "carbon-components-react";
-import { iconCheckmarkSolid } from "carbon-icons";
+  StructuredListInput
+} from "@carbon/react";
+import { CheckmarkFilled } from "@carbon/icons-react";
 import Header from "./Header";
 import DisplayForm from "./DisplayForm";
 import "./patterns.scss";
@@ -64,10 +63,7 @@ class MasterDetail extends Component {
             checked={this.state.selectedRow === id}
           />
           <StructuredListCell>
-            <Icon
-              className="bx--structured-list-svg"
-              icon={iconCheckmarkSolid}
-            />
+            <CheckmarkFilled className="cds--structured-list-svg" />
           </StructuredListCell>
         </div>
         {Object.keys(row).map(col => {
@@ -87,13 +83,13 @@ class MasterDetail extends Component {
     const columns = data[selectedRow].map(item => item.label);
 
     return (
-      <div className="bx--grid ">
+      <div className="cds--grid ">
         <Header
           title="Master Detail"
           subtitle="This pattern will use a simple list of table list and link to a display form."
         />
-        <div className="bx--row">
-          <div className="bx--col-xs-12">
+        <div className="cds--row">
+          <div className="cds--col-xs-12">
             <StructuredListWrapper selection border>
               <StructuredListHead>
                 <StructuredListRow head>

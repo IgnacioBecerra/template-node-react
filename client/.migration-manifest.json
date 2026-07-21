@@ -11,6 +11,74 @@
     "tsconfig.json": {
       "action": "deleted",
       "reason": "Removed by migration agent as part of framework migration. File tsconfig.json is framework-specific and not required in the target configuration."
+    },
+    "client/src/pattern-components/CreateReadUpdateDelete.jsx": {
+      "action": "deleted",
+      "reason": "Removed by migration agent as part of framework migration. File client/src/pattern-components/CreateReadUpdateDelete.jsx is framework-specific and not required in the target configuration."
+    },
+    "client/src/pattern-components/DisplayForm.jsx": {
+      "action": "deleted",
+      "reason": "Removed by migration agent as part of framework migration. File client/src/pattern-components/DisplayForm.jsx is framework-specific and not required in the target configuration."
+    },
+    "client/src/pattern-components/Header.jsx": {
+      "action": "deleted",
+      "reason": "Removed by migration agent as part of framework migration. File client/src/pattern-components/Header.jsx is framework-specific and not required in the target configuration."
+    },
+    "client/src/pattern-components/LinkedList.jsx": {
+      "action": "deleted",
+      "reason": "Removed by migration agent as part of framework migration. File client/src/pattern-components/LinkedList.jsx is framework-specific and not required in the target configuration."
+    },
+    "client/src/pattern-components/ListToList.jsx": {
+      "action": "deleted",
+      "reason": "Removed by migration agent as part of framework migration. File client/src/pattern-components/ListToList.jsx is framework-specific and not required in the target configuration."
+    },
+    "client/src/pattern-components/MasterDetail.jsx": {
+      "action": "deleted",
+      "reason": "Removed by migration agent as part of framework migration. File client/src/pattern-components/MasterDetail.jsx is framework-specific and not required in the target configuration."
+    },
+    "client/src/pattern-components/SearchForm.jsx": {
+      "action": "deleted",
+      "reason": "Removed by migration agent as part of framework migration. File client/src/pattern-components/SearchForm.jsx is framework-specific and not required in the target configuration."
+    },
+    "client/src/pattern-components/SearchList.jsx": {
+      "action": "deleted",
+      "reason": "Removed by migration agent as part of framework migration. File client/src/pattern-components/SearchList.jsx is framework-specific and not required in the target configuration."
+    },
+    "client/src/pattern-components/SimpleList.jsx": {
+      "action": "deleted",
+      "reason": "Removed by migration agent as part of framework migration. File client/src/pattern-components/SimpleList.jsx is framework-specific and not required in the target configuration."
+    },
+    "client/src/pattern-components/TableList.jsx": {
+      "action": "deleted",
+      "reason": "Removed by migration agent as part of framework migration. File client/src/pattern-components/TableList.jsx is framework-specific and not required in the target configuration."
+    },
+    "client/src/pattern-components/UpdateForm.jsx": {
+      "action": "deleted",
+      "reason": "Removed by migration agent as part of framework migration. File client/src/pattern-components/UpdateForm.jsx is framework-specific and not required in the target configuration."
+    },
+    "client/src/pattern-components/ValidatingForm.jsx": {
+      "action": "deleted",
+      "reason": "Removed by migration agent as part of framework migration. File client/src/pattern-components/ValidatingForm.jsx is framework-specific and not required in the target configuration."
+    },
+    "client/src/pattern-components/ValidatingFormWizard1.jsx": {
+      "action": "deleted",
+      "reason": "Removed by migration agent as part of framework migration. File client/src/pattern-components/ValidatingFormWizard1.jsx is framework-specific and not required in the target configuration."
+    },
+    "client/src/pattern-components/ValidatingFormWizard2.jsx": {
+      "action": "deleted",
+      "reason": "Removed by migration agent as part of framework migration. File client/src/pattern-components/ValidatingFormWizard2.jsx is framework-specific and not required in the target configuration."
+    },
+    "client/src/pattern-components/patterns.scss": {
+      "action": "deleted",
+      "reason": "Removed by migration agent as part of framework migration. File client/src/pattern-components/patterns.scss is framework-specific and not required in the target configuration."
+    },
+    "client/src/util/timer.js": {
+      "action": "deleted",
+      "reason": "Removed by migration agent as part of framework migration. File client/src/util/timer.js is framework-specific and not required in the target configuration."
+    },
+    "client/src/util/timer.test.js": {
+      "action": "deleted",
+      "reason": "Removed by migration agent as part of framework migration. File client/src/util/timer.test.js is framework-specific and not required in the target configuration."
     }
   }
 }

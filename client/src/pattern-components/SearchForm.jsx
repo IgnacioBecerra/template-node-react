@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Search } from "carbon-components-react";
+import { Search } from "@carbon/react";
 import "./patterns.scss";
 import Header from "./Header";
 import DisplayForm from "./DisplayForm";
@@ -69,28 +69,27 @@ class SearchForm extends Component {
     const filteredData = this.getFilteredData(data);
 
     return (
-      <div className="bx--grid pattern-container">
+      <div className="cds--grid pattern-container">
         <Header
           title="Search Form"
           subtitle="This pattern uses a Validating Form pattern and is linked to a Display Form pattern for a single item display."
         />
-        <div className="bx--row">
-          <div className="bx--col-xs-12">
+        <div className="cds--row">
+          <div className="cds--col-xs-12">
             <Search
               value={this.state.searchKeyword}
               labelText="Search"
               closeButtonLabelText=""
-              placeHolderText="Search"
+              placeholder="Search"
               onChange={this.onSearch}
               id="search-1"
-              light={true}
             />
           </div>
         </div>
         <br />
         {this.state.searchKeyword !== "" && (
-          <div className="bx--row">
-            <div className="bx--col-xs-12">
+          <div className="cds--row">
+            <div className="cds--col-xs-12">
               {filteredData.length > 0 ? (
                 <DisplayForm
                   data={this.formatDataForDisplayForm(filteredData[0])}

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { DataTable, Button } from "carbon-components-react";
+import { DataTable, Button } from "@carbon/react";
 import Header from "./Header";
 import "./patterns.scss";
 
@@ -103,13 +103,13 @@ class ListToList extends Component {
 
   render() {
     return (
-      <div className="bx--grid pattern-container">
+      <div className="cds--grid pattern-container">
         <Header
           title="List To List"
           subtitle="This pattern is based on a Simple list pattern but will display two lists and allow the moving of data from one list to another and back again."
         />
-        <div className="bx--row">
-          <div className="bx--col-xs-12 bx--col-lg-5">
+        <div className="cds--row">
+          <div className="cds--col-xs-12 cds--col-lg-5">
             <DataTable
               rows={this.state.rowsListA}
               headers={this.state.headers}
@@ -151,7 +151,7 @@ class ListToList extends Component {
               }}
             />
           </div>
-          <div className="bx--col-xs-12 bx--col-lg-2 list-to-list-moving-btn-container">
+          <div className="cds--col-xs-12 cds--col-lg-2 list-to-list-moving-btn-container">
             <div>
               <Button
                 className="list-to-list-moving-btn"
@@ -168,7 +168,7 @@ class ListToList extends Component {
               </Button>
             </div>
           </div>
-          <div className="bx--col-xs-12 bx--col-lg-5">
+          <div className="cds--col-xs-12 cds--col-lg-5">
             <DataTable
               rows={this.state.rowsListB}
               headers={this.state.headers}

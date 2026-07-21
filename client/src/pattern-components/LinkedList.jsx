@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Form, DropdownV2, Button, Tile } from "carbon-components-react";
+import { Form, Dropdown, Button, Tile } from "@carbon/react";
 import Header from "./Header";
 import "./patterns.scss";
 
@@ -100,20 +100,19 @@ class LinkedList extends Component {
 
   render() {
     return (
-      <div className="bx--grid pattern-container">
+      <div className="cds--grid pattern-container">
         <Header
           title="Linked List"
           subtitle="This pattern will link multiple list or combo controls together so when a selection on one list is made it may change the information displayed in the other linked list."
         />
-        <div className="bx--row">
-          <div className="bx--col-xs-12">
+        <div className="cds--row">
+          <div className="cds--col-xs-12">
             <Tile>
               <Form>
-                <p className="bx--label left-align">Country</p>
-                <DropdownV2
+                <p className="cds--label left-align">Country</p>
+                <Dropdown
                   id="country"
-                  label="Select a country.."
-                  ariaLabel="Select a country.."
+                  titleText="Select a country.."
                   items={this.state.countryList}
                   selectedItem={this.state.country}
                   onChange={this.saveDataDropdown1}
@@ -123,11 +122,10 @@ class LinkedList extends Component {
                 )}
                 <br />
                 <br />
-                <p className="bx--label left-align">State</p>
-                <DropdownV2
+                <p className="cds--label left-align">State</p>
+                <Dropdown
                   id="state"
-                  label="Select a state.."
-                  ariaLabel="Select a state.."
+                  titleText="Select a state.."
                   items={this.state.stateList}
                   selectedItem={this.state.state}
                   onChange={this.saveDataDropdown2}
@@ -137,11 +135,10 @@ class LinkedList extends Component {
                 )}
                 <br />
                 <br />
-                <p className="bx--label left-align">City</p>
-                <DropdownV2
+                <p className="cds--label left-align">City</p>
+                <Dropdown
                   id="city"
-                  label="Select a city.."
-                  ariaLabel="Select a city.."
+                  titleText="Select a city.."
                   items={this.state.cityList}
                   selectedItem={this.state.city}
                   onChange={this.saveDataDropdown3}
@@ -161,8 +158,8 @@ class LinkedList extends Component {
         <br />
         <br />
         {Object.keys(this.state.dataToSave).length > 0 && (
-          <div className="bx--row">
-            <div className="bx--col-xs-12 left-align">
+          <div className="cds--row">
+            <div className="cds--col-xs-12 left-align">
               <Tile>
                 {Object.keys(this.state.dataToSave).map(item => (
                   <p key={item}>

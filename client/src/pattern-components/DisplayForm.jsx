@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { TextInput, Form, DropdownV2, Tile } from "carbon-components-react";
+import { TextInput, Form, Dropdown, Tile } from "@carbon/react";
 import Header from "./Header";
 import "./patterns.scss";
 
@@ -28,15 +28,15 @@ class DisplayForm extends Component {
     const data = this.state.data;
     const showDescription = this.state.showDescription;
     return (
-      <div className="bx--grid">
+      <div className="cds--grid">
         {showDescription && (
           <Header
             title="Display Form"
             subtitle="Displays a model object as a form in a read only display."
           />
         )}
-        <div className="bx--row">
-          <div className="bx--col-xs-12">
+        <div className="cds--row">
+          <div className="cds--col-xs-12">
             <Tile>
               <Form>
                 {data.map(item => {
@@ -57,11 +57,11 @@ class DisplayForm extends Component {
                   } else if (item.type === "dropdown") {
                     return (
                       <div key={item.label} className="display-form-item">
-                        <p className="bx--label left-align">{item.label}</p>
-                        <DropdownV2
+                        <p className="cds--label left-align">{item.label}</p>
+                        <Dropdown
                           disabled
                           id={item.label}
-                          label={"Select a " + item.label.toLowerCase() + ".."}
+                          titleText={"Select a " + item.label.toLowerCase() + ".."}
                           items={item.value}
                           selectedItem={item.value[0]}
                         />

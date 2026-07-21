@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Search, DataTable } from "carbon-components-react";
+import { Search, DataTable } from "@carbon/react";
 import Header from "./Header";
 import "./patterns.scss";
 
@@ -75,28 +75,27 @@ class SearchList extends Component {
 
   render() {
     return (
-      <div className="bx--grid pattern-container">
+      <div className="cds--grid pattern-container">
         <Header
           title="Search List"
           subtitle="This pattern uses a Validating Form pattern linked to a Table List pattern for display of the items that have been searched for."
         />
-        <div className="bx--row">
-          <div className="bx--col-xs-12">
+        <div className="cds--row">
+          <div className="cds--col-xs-12">
             <Search
               value={this.state.searchKeyword}
               labelText="Search"
               closeButtonLabelText=""
-              placeHolderText="Search"
+              placeholder="Search"
               onChange={this.onSearch}
               id="search-1"
-              light={true}
             />
           </div>
         </div>
         <br />
         <br />
-        <div className="bx--row">
-          <div className="bx--col-xs-12">
+        <div className="cds--row">
+          <div className="cds--col-xs-12">
             {this.state.rowsList.length !== 0 && (
               <DataTable
                 rows={this.state.rowsList}

@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import {
   TextInput,
   Form,
-  DropdownV2,
+  Dropdown,
   Button,
   Tile
-} from "carbon-components-react";
+} from "@carbon/react";
 import Header from "./Header";
 import "./patterns.scss";
 
@@ -121,13 +121,13 @@ class ValidatingFormWizard2 extends Component {
 
   render() {
     return (
-      <div className="bx--grid pattern-container">
+      <div className="cds--grid pattern-container">
         <Header
           title="Validating Form Wizard 2"
           subtitle="The Validating Form Wizard is based on the Validating Form pattern but displays a large form in the style of Paged Wizard, Tabbed Page or Individual Pages. This will depend on the channel device characteristics."
         />
-        <div className="bx--row">
-          <div className="bx--col-xs-12">
+        <div className="cds--row">
+          <div className="cds--col-xs-12">
             <Tile>
               <Form>
                 {this.state.selectedTab === 0 && (
@@ -202,11 +202,10 @@ class ValidatingFormWizard2 extends Component {
                     />
                     <br />
                     <br />
-                    <p className="bx--label left-align">State</p>
-                    <DropdownV2
+                    <p className="cds--label left-align">State</p>
+                    <Dropdown
                       id="state"
-                      label="Select a state.."
-                      ariaLabel="Select a state.."
+                      titleText="Select a state.."
                       items={[
                         "AL",
                         "AK",
@@ -291,11 +290,10 @@ class ValidatingFormWizard2 extends Component {
                     />
                     <br />
                     <br />
-                    <p className="bx--label left-align">Country</p>
-                    <DropdownV2
+                    <p className="cds--label left-align">Country</p>
+                    <Dropdown
                       id="country"
-                      label="Select a country.."
-                      ariaLabel="Select a country.."
+                      titleText="Select a country.."
                       items={["United States", "Other"]}
                       selectedItem={this.state.country}
                       onChange={this.saveDataDropdown2}
@@ -324,8 +322,8 @@ class ValidatingFormWizard2 extends Component {
         <br />
         <br />
         {Object.keys(this.state.dataToSave).length > 0 && (
-          <div className="bx--row">
-            <div className="bx--col-xs-12 left-align">
+          <div className="cds--row">
+            <div className="cds--col-xs-12 left-align">
               <Tile>
                 {Object.keys(this.state.dataToSave).map(item => (
                   <p>

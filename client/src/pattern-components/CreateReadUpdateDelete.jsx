@@ -6,10 +6,9 @@ import {
   StructuredListHead,
   StructuredListBody,
   StructuredListInput,
-  Icon,
   Button
-} from "carbon-components-react";
-import { iconCheckmarkSolid } from "carbon-icons";
+} from "@carbon/react";
+import { CheckmarkFilled } from "@carbon/icons-react";
 import Header from "./Header";
 import ValidatingForm from "./ValidatingForm";
 import "./patterns.scss";
@@ -107,10 +106,7 @@ class CreateReadUpdateDelete extends Component {
             checked={this.state.selectedRow === id}
           />
           <StructuredListCell>
-            <Icon
-              className="bx--structured-list-svg"
-              icon={iconCheckmarkSolid}
-            />
+            <CheckmarkFilled className="cds--structured-list-svg" />
           </StructuredListCell>
         </div>
         {Object.keys(row).map(col => {
@@ -132,13 +128,13 @@ class CreateReadUpdateDelete extends Component {
       : [];
 
     return (
-      <div className="bx--grid pattern-container">
+      <div className="cds--grid pattern-container">
         <Header
           title="Create, Read, Update, Delete"
           subtitle="This composite pattern is build from the Table List pattern and uses the Validating Form pattern for creating items, Update Form pattern for Update."
         />
-        <div className="bx--row">
-          <div className="bx--col-xs-12">
+        <div className="cds--row">
+          <div className="cds--col-xs-12">
             <StructuredListWrapper selection border>
               <StructuredListHead>
                 <StructuredListRow head>
@@ -162,8 +158,8 @@ class CreateReadUpdateDelete extends Component {
             </StructuredListWrapper>
           </div>
         </div>
-        <div className="bx--row left-align">
-          <div className="bx--col-xs-12">
+        <div className="cds--row left-align">
+          <div className="cds--col-xs-12">
             <Button className="add-delete-row-buttons" onClick={this.addRow}>
               Add Row
             </Button>
@@ -175,8 +171,8 @@ class CreateReadUpdateDelete extends Component {
         <br />
         <br />
         {data.length > 0 && (
-          <div className="bx--row">
-            <div className="bx--col-xs-12">
+          <div className="cds--row">
+            <div className="cds--col-xs-12">
               <ValidatingForm
                 data={data[selectedRow]}
                 updateRow={this.updateRow}
